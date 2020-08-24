@@ -2732,7 +2732,7 @@ input, select, textarea {
 				/* -moz-transform: scale(1.1); */
 				/* -webkit-transform: scale(1.1); */
 				/* -ms-transform: scale(1.1); */
-				/* transform: scale(1.1); */
+				transform: scale(1.1);
 			}
 
 				body:not(.is-touch) .tiles article:hover > .image:before {
