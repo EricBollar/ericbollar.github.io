@@ -39,7 +39,9 @@
 				2:25 - Whiteboard Explanation <br>
 				4:58 - Code Analysis <br>
 				17:54 - Demo Walkthrough <br>
-				23:45 - Proof of Concept Footage <br>
+				23:45 - Proof of Concept Footage <br><br><br><br>
+				&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+				<a style="transform: scale(3);" href="https://github.com/EricBollar/EBollarTextEngine" class="icon brands style2 fa-github"></a>
 			</p>
 
 			<div>
@@ -50,8 +52,8 @@
 					&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp The only thing I really needed to start was some way to change the color of a pixel in a window, and because I didn’t realize that all I had to do was read some windows documentation or even easier, watch a few tutorials to get going the proper way, I did so the only way I knew at the time: printing to the console. Also I didn’t want to use OpenGL because I really wanted to create the thing from scratch.
 					I looked up a few examples online, but really didn’t spend too much time researching, I just started head first. 
 					<br>
-					&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp The hierarchal structure of the engine is similar to unity in which each game contains scenes with their own set of sprites. The game object handles inputs and outputs, and it sends these inputs to the current scene which in return sends back the next frame. The game object prints each pixel according to its color and adds text accordingly, but eliminates the previously seen flicker using double buffering. 
-					Thankfully, the windows console actually allows you to set the position of the cursor. The current scene handles those inputs accordingly by manipulating its sprites. When applied to the game Snake, I implemented three scenes: menu, game, and death, each with their own set of sprites. For example, Snake’s game scene originally contains only two sprites: the snakehead and the apple. My engine allows for two types of object sprites, custom and rectangular. Custom sprites like this title allow the creator to enter coordinates into the sprites’ tile map where 0, 0, is the sprites position in space. Rectangular sprites are defined by just width and height, and their position in space is the top left corner. Also, there are text sprites which are handled differently in rendering because of the two character pixel width. These are strips of text that can be colored and added to the scene. Each sprite can be manipulated in almost every way from changing color to rewriting its tile map.
+					&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp The hierarchal structure of the engine is similar to unity in which each game contains scenes with their own set of sprites. The game object handles inputs and outputs, and it sends these inputs to the current scene which in return sends back the next frame. The game object prints each pixel according to its color and adds text accordingly, but eliminates any flickering using double buffering. 
+					Thankfully, the windows console actually allows you to set the position of the cursor. The current scene handles those inputs accordingly by manipulating its sprites. When applied to the game Snake, I implemented three scenes: menu, game, and death, each with their own set of sprites. For example, Snake’s game scene originally contains only two sprites: the snakehead and the apple. Each sprite can be manipulated in almost every way from changing its color to rewriting its tile map.
 					<br>
 					&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Overall, the final product is a crude yet functional game engine that can run Snake in the windows console. Improvements I would make would be to do more research upfront, add more comments during production, and although this was my first project using pointers, fix memory leaks earlier on and work on efficiency before adding more features. I also think I need to improve my project videos in the future.
 				</p>
