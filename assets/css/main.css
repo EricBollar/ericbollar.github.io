@@ -139,14 +139,14 @@ input, select, textarea {
 
 		}
 
-	a {
+	a { /* These are for hyperlinks - how the text is formatted */
 		-moz-transition: border-bottom-color 0.2s ease, color 0.2s ease;
 		-webkit-transition: border-bottom-color 0.2s ease, color 0.2s ease;
 		-ms-transition: border-bottom-color 0.2s ease, color 0.2s ease;
 		transition: border-bottom-color 0.2s ease, color 0.2s ease;
 		text-decoration: none;
-		color: #585858;
-		border-bottom: dotted 1px rgba(88, 88, 88, 0.5);
+		color: #7acaff;
+		border-bottom: dotted 1px rgba(117, 193, 255, 0.5);
 	}
 
 		a:hover {
