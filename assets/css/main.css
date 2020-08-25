@@ -2602,7 +2602,7 @@ input, select, textarea {
 					width: 100%;
 				}
 
-				.tiles article > .image:before {
+				.tiles article > .image:before { /* The image when not being hovered over */
 					pointer-events: none;
 					-moz-transition: background-color 0.5s ease, opacity 0.5s ease;
 					-webkit-transition: background-color 0.5s ease, opacity 0.5s ease;
@@ -2611,7 +2611,7 @@ input, select, textarea {
 					content: '';
 					display: block;
 					position: absolute;
-					border: 3px solid #51A576;
+					border: 3px solid #629677;
 					top: 0;
 					left: 0;
 					width: 100%;
@@ -2732,16 +2732,18 @@ input, select, textarea {
 				/* -moz-transform: scale(1.1); */
 				/* -webkit-transform: scale(1.1); */
 				/* -ms-transform: scale(1.1); */
-				transform: scale(1.1);
 			}
 
-				body:not(.is-touch) .tiles article:hover > .image:before {
+				body:not(.is-touch) .tiles article:hover > .image:before { /* The image when being hovered over
 					/* background-color: #181818;  */
 					/* opacity: 0.55; */
+					border-width: 6px;
+					border-color: #98B6B1;
 				}
 
-				body:not(.is-touch) .tiles article:hover > .image:after {
+				body:not(.is-touch) .tiles article:hover > .image:after { 
 					/* opacity: 0; */
+					border-width: 5px;
 				}
 
 			body:not(.is-touch) .tiles article:hover .content {
