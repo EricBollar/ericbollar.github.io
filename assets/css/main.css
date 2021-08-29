@@ -7,7 +7,7 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
-@media (max-width:1024px) { img#optionalstuff {display: none;} }
+@media (max-width:1024px) { img#optionalstuff {display: none;} iframe#optionalstuff {display: none;} }
 
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
