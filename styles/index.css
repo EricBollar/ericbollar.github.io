@@ -134,6 +134,13 @@ body::before {
     border-radius: 50%;
     object-fit: cover;
     border: 2px white solid;
+    flex-shrink: 0;
+    transition: all .2s;
+}
+
+.profile-card__figure:hover > a > img {
+    transform: scale(1.05);
+    border: 2px blue solid;
 }
 
 .profile-card__desc {
