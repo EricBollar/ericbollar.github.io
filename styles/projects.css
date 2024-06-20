@@ -1,0 +1,308 @@
+@import url('https://fonts.googleapis.com/css?family=Manrope');
+
+:root {
+    --white: #f2f3e2;
+    --black: #131310;
+}
+
+body {
+    background-color: var(--black);
+    font-family: "Manrope";
+}
+
+.row {
+    border: 1px solid var(--white);
+    border-radius: 15px;
+    padding: 15px;
+    transform: scale(1);
+    -webkit-transition: transform 0.1s ease-in-out;
+}
+
+.row > img {
+    border: 1px solid var(--white);
+    border-radius: 15px;
+}
+
+.row:hover {
+    background-color: var(--white);
+    cursor: pointer;
+    transform: scale(1.05);
+    -webkit-transition: transform 0.1s ease-in-out;
+}
+
+.row:hover h3 {
+    color: var(--black);
+}
+
+.row:hover h4 {
+    color: var(--black);
+}
+
+.row:hover p {
+    color: var(--black);
+}
+
+.row:hover img {
+    border: 1px solid var(--black);
+}
+
+.title {
+    display: flex;
+    flex-direction: row;
+}
+
+.title > img {
+    padding-left: 5px;
+    padding-top: 5px;
+    align-content: center;
+}
+
+h5 {
+    color: var(--white);
+    font-size: 18px;
+    font-weight: 100;
+    margin: auto;
+    padding-top: 10px;
+}
+
+.copyright {
+    margin-bottom: 10px;
+}
+
+.github {
+    padding-left: 10px;
+    transform: scale(1);
+    -webkit-transition: transform 0.1s ease-in-out;
+}
+
+.github:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    -webkit-transition: transform 0.1s ease-in-out;
+}
+
+h2 {
+    color: var(--white);
+    font-size: 18px;
+    font-weight: 100;
+    display: none;
+}
+
+h3 {
+    margin-top: 0;
+    color: var(--white);
+    font-size: 36px;
+    margin-bottom: 0;
+    font-weight: 900;
+}
+
+h4 {
+    margin-top: 0;
+    color: var(--white);
+    font-size: 14px;
+    font-weight: 100;
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+p {
+    margin-top: 0;
+    color: var(--white);
+    font-size: 18px;
+    font-weight: 100;
+    margin-bottom: 0px;
+}
+
+.button {
+    margin-top: 0;
+    display: flex;
+    flex-direction: row;
+    max-width: fit-content;
+    margin-right: auto;
+}
+
+.back {
+    display: flex;
+    justify-content: space-around;
+    border: 1px solid var(--white);
+    border-radius: 15px;
+}
+
+.back:hover {
+    cursor: pointer;
+    background-color: var(--white);
+}
+
+.back:hover > p {
+    color: var(--black);
+}
+
+.back > p {
+    color: var(--white);
+    padding: 10px;
+    max-height: fit-content;
+    margin-top: auto;
+    margin-bottom: auto;
+    max-width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.center {
+    position: absolute;
+    margin-top: 30px;
+    width: 850px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+@media (max-width: 1000px) {
+    h2 {
+        display: none;
+    }
+
+    .row {
+        display: flex;
+    }
+
+    h5 {
+        display: flex;
+    }
+
+    .center {
+        width: 85%;
+    }
+}
+
+@media (max-width: 850px) {
+    h2 {
+        display: none;
+    }
+    
+    .row {
+        display: flex;
+    }
+
+    h5 {
+        display: flex;
+    }
+
+    .row > img {
+        width: 150px;
+        height: 150px;
+    }
+
+    h3 {
+        font-size: 27px;
+    }
+
+    h4 {
+        font-size: 12px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 635px) {
+    h2 {
+        display: none;
+    }
+    
+    .row {
+        display: flex;
+    }
+
+    h5 {
+        display: flex;
+    }
+
+    .row > img {
+        width: 125px;
+        height: 125px;
+    }
+
+    h3 {
+        font-size: 18px;
+    }
+
+    h4 {
+        font-size: 9px;
+    }
+
+    p {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 510px) {
+    h2 {
+        display: none;
+    }
+    
+    .row {
+        display: flex;
+    }
+
+    h5 {
+        display: flex;
+    }
+
+    .row > img {
+        width: 100px;
+        height: 100px;
+    }
+
+    h3 {
+        font-size: 14px;
+    }
+
+    h4 {
+        font-size: 6px;
+    }
+
+    p {
+        font-size: 9px;
+    }
+}
+
+@media (max-width: 400px) {
+    .row {
+        display: none;
+    }
+
+    h5 {
+        display: none;
+    }
+    
+    h2 {
+        display: block;
+    }
+}
+
+.prev {
+    margin-top: 15px;
+    font-weight: 900;
+    text-align: center;
+}
+
+.employers-center {
+    position: absolute;
+    left: 50%;
+    transform: TranslateX(-50%);
+}
+
+.employers {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    padding-bottom: 30px;
+}

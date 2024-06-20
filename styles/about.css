@@ -1,0 +1,293 @@
+@import url('https://fonts.googleapis.com/css?family=Manrope');
+
+:root {
+    --white: #f2f3e2;
+    --black: #131310;
+}
+
+body {
+    background-color: var(--black);
+    font-family: "Manrope";
+}
+
+h1 {
+    margin-top: 0;
+    color: var(--white);
+    font-size: 48px;
+    margin-bottom: 0;
+    font-weight: 900;
+}
+
+p {
+    margin-top: 0;
+    color: var(--white);
+    font-size: 18px;
+    font-weight: 100;
+}
+
+.button {
+    margin-top: 0;
+    display: flex;
+    flex-direction: row;
+    max-width: fit-content;
+    margin-right: auto;
+}
+
+.back {
+    border: 1px solid var(--white);
+    border-radius: 15px;
+}
+
+.back:hover {
+    cursor: pointer;
+    background-color: var(--white);
+}
+
+.back:hover > p {
+    color: var(--black);
+}
+
+.back > p {
+    color: var(--white);
+    padding: 12px;
+    max-height: fit-content;
+    margin-top: auto;
+    margin-bottom: auto;
+    max-width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.bottom {
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: TranslateX(-50%);
+}
+
+.text {
+    text-align: left;
+}
+
+.email {
+    font-weight: 900;
+    font-size: 21px;
+    margin-bottom: 15px;
+}
+
+.row > img {
+    border: 1px solid var(--white);
+    border-radius: 15px;
+    width: 180px;
+    height: 240px;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.center {
+    position: absolute;
+    width: 850px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.employers > img {
+    height: 42px;
+}
+
+.employers {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    padding-bottom: 30px;
+}
+
+.prev {
+    margin-top: 15px;
+    font-weight: 900;
+    text-align: center;
+    display: block;
+}
+
+.employers-center {
+    display: block;
+    position: absolute;
+    left: 50%;
+    transform: TranslateX(-50%);
+}
+
+@media (max-width:1000px) {
+    .center {
+        width: 85%;
+    }
+}
+
+@media (max-width:800px) {
+    .prev {
+        margin-top: 10px;
+    }
+
+    .employers {
+        gap: 20px;
+    }
+
+    .bottom {
+        bottom: 10px;
+    }
+
+    .back > p {
+        padding: 8px;
+    }
+
+    .back {
+        border-radius: 10px;
+    }
+
+    h1 {
+        font-size: 32px;
+    }
+
+    .email {
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+
+    p {
+        font-size: 12px;
+    }
+
+    .row {
+        gap: 10px;
+        margin-top: 10px;
+    }
+
+    .row > img {
+        border-radius: 10px;
+        width: 120px;
+        height: 160px;
+    }
+
+    .center {
+        width: 85%;
+    }
+
+    .employers > img {
+        height: 28px;
+    }
+}
+
+@media (max-width:530px) {
+    .prev {
+        margin-top: 5px;
+    }
+
+    .employers {
+        gap: 10px;
+    }
+
+    .bottom {
+        bottom: 5px;
+    }
+
+    .back > p {
+        padding: 4px;
+    }
+
+    .back {
+        border-radius: 5px;
+    }
+
+    h1 {
+        font-size: 16px;
+    }
+
+    .email {
+        font-size: 7px;
+        margin-bottom: 5px;
+    }
+
+    p {
+        font-size: 6px;
+    }
+
+    .row {
+        gap: 5px;
+        margin-top: 5px;
+    }
+
+    .row > img {
+        border-radius: 5px;
+        width: 60px;
+        height: 80px;
+    }
+
+    .center {
+        width: 85%;
+    }
+
+    .employers > img {
+        height: 14px;
+    }
+}
+
+
+@media (max-width:250px) {
+    .prev {
+        margin-top: 5px;
+    }
+
+    .employers {
+        gap: 10px;
+    }
+
+    .bottom {
+        bottom: 5px;
+    }
+
+    .back > p {
+        padding: 4px;
+    }
+
+    .back {
+        border-radius: 5px;
+    }
+
+    h1 {
+        font-size: 16px;
+    }
+
+    .email {
+        font-size: 7px;
+        margin-bottom: 5px;
+    }
+
+    p {
+        font-size: 6px;
+    }
+
+    .row {
+        gap: 5px;
+        margin-top: 5px;
+        flex-direction: column;
+    }
+
+    .row > img {
+        border-radius: 5px;
+        width: 60px;
+        height: 80px;
+    }
+
+    .center {
+        width: 85%;
+    }
+
+    .employers > img {
+        height: 14px;
+    }
+}
