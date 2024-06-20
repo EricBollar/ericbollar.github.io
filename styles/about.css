@@ -13,7 +13,7 @@ body {
 h1 {
     margin-top: 0;
     color: var(--white);
-    font-size: 48px;
+    font-size: 50px;
     margin-bottom: 0;
     font-weight: 900;
 }
@@ -21,7 +21,7 @@ h1 {
 p {
     margin-top: 0;
     color: var(--white);
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 100;
 }
 
@@ -49,7 +49,7 @@ p {
 
 .back > p {
     color: var(--white);
-    padding: 12px;
+    padding: 10px;
     max-height: fit-content;
     margin-top: auto;
     margin-bottom: auto;
@@ -71,18 +71,18 @@ p {
 
 .email {
     font-weight: 900;
-    font-size: 21px;
+    font-size: 25px;
     margin-bottom: 15px;
 }
 
-.row > img {
+.row-landscape > img {
     border: 1px solid var(--white);
     border-radius: 15px;
     width: 180px;
     height: 240px;
 }
 
-.row {
+.row-landscape {
     display: flex;
     flex-direction: row;
     gap: 15px;
@@ -122,172 +122,118 @@ p {
     transform: TranslateX(-50%);
 }
 
-@media (max-width:1000px) {
+.row-portrait {
+    display: none;
+}
+
+@media (max-width: 1000px) and (orientation:landscape) {
     .center {
         width: 85%;
     }
-}
 
-@media (max-width:800px) {
-    .prev {
-        margin-top: 10px;
-    }
-
-    .employers {
-        gap: 20px;
-    }
-
-    .bottom {
-        bottom: 10px;
-    }
-
-    .back > p {
-        padding: 8px;
-    }
-
-    .back {
-        border-radius: 10px;
+    .row-landscape {
+        display: flex;
     }
 
     h1 {
-        font-size: 32px;
+        font-size: 5vw;
     }
 
     .email {
-        font-size: 14px;
-        margin-bottom: 10px;
+        font-size: 2.5vw;
     }
 
     p {
-        font-size: 12px;
+        font-size: 2vw;
     }
 
-    .row {
-        gap: 10px;
-        margin-top: 10px;
+    .back {
+        border-radius: 1.5vw;
     }
 
-    .row > img {
-        border-radius: 10px;
-        width: 120px;
-        height: 160px;
+    .back > p {
+        padding: 1vw;
     }
 
-    .center {
-        width: 85%;
+    .row-landscape > img {
+        border-radius: 1.5vw;
+        width: 18vw;
+        height: 24vw;
     }
 
     .employers > img {
-        height: 28px;
-    }
-}
-
-@media (max-width:530px) {
-    .prev {
-        margin-top: 5px;
+        height: 4.2vw;
     }
 
     .employers {
-        gap: 10px;
+        gap: 3vw;
+        padding-bottom: 3vw;
     }
 
-    .bottom {
-        bottom: 5px;
-    }
-
-    .back > p {
-        padding: 4px;
-    }
-
-    .back {
-        border-radius: 5px;
-    }
-
-    h1 {
-        font-size: 16px;
-    }
-
-    .email {
-        font-size: 7px;
-        margin-bottom: 5px;
-    }
-
-    p {
-        font-size: 6px;
-    }
-
-    .row {
-        gap: 5px;
-        margin-top: 5px;
-    }
-
-    .row > img {
-        border-radius: 5px;
-        width: 60px;
-        height: 80px;
-    }
-
-    .center {
-        width: 85%;
-    }
-
-    .employers > img {
-        height: 14px;
+    .prev {
+        margin-top: 1vw;
     }
 }
 
-
-@media (max-width:250px) {
-    .prev {
-        margin-top: 5px;
+@media (orientation: portrait) {
+    .row-landscape {
+        display: none;
     }
 
-    .employers {
-        gap: 10px;
-    }
-
-    .bottom {
-        bottom: 5px;
-    }
-
-    .back > p {
-        padding: 4px;
-    }
-
-    .back {
-        border-radius: 5px;
-    }
-
-    h1 {
-        font-size: 16px;
-    }
-
-    .email {
-        font-size: 7px;
-        margin-bottom: 5px;
-    }
-
-    p {
-        font-size: 6px;
-    }
-
-    .row {
-        gap: 5px;
-        margin-top: 5px;
+    .row-portrait {
+        display: flex;
         flex-direction: column;
     }
 
-    .row > img {
-        border-radius: 5px;
-        width: 60px;
-        height: 80px;
-    }
-
     .center {
         width: 85%;
     }
 
+    .in-line {
+        margin-top: 2vw;
+        gap: 2vw;
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 2vw;
+    }
+
+    h1 {
+        font-size: 6.6vw;
+    }
+
+    .email {
+        font-size: 3.3vw;
+    }
+
+    p {
+        font-size: 4vw;
+    }
+
+    .back {
+        border-radius: 2.7vw;
+    }
+
+    .back > p {
+        padding: 1.3vw;
+    }
+
+    .in-line > img {
+        border: 1px solid var(--white);
+        border-radius: 2vw;
+        width: 12vw;
+        height: 16vw;
+    }
+
     .employers > img {
-        height: 14px;
+        height: 5.6vw;
+    }
+
+    .employers {
+        gap: 4vw;
+        padding-bottom: 4vw;
+    }
+
+    .prev {
+        margin-top: 1.3vw;
     }
 }
